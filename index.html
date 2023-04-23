@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Entraînement Git</title>
+</head>
+<html>
+
+<body>
+    <header>
+        <nav class="mb-10px mt-0">
+            <ul>
+                <li><a href="index.html">Simulateur</a></li>
+                <li><a href="CheatSheet.html">Cheat sheet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="d-flex justify-content-a flex-wrap">
+            <div id="terminal">
+                <div id="title">
+                    <div class="d-flex align-item-center">
+                        <img class="iconeTerminalAvatar circle me-1 ms-1" src="img/images.jpg" alt="avatar">
+                        <p>Terminal d'entraînement</p>
+                    </div>
+                    <div id="infoUser" class="d-flex ">
+                        <p class="greenTerminal me-1">invite@USER</p>
+                        <p class="purpleTerminal me-1">WELCOME</p>
+                        <p class="yellowTerminal me-1">~/Documents/training</p>
+                        <p class="blueTerminal">(master)</p>
+                    </div>
+                </div>
+                <form id="command-form">
+                    <input type="text" id="command-input" placeholder="Saisissez une commande sans inscrire git...">
+                    <button type="submit">Envoyer</button>
+                </form>
+                <div id="output"></div>
+            </div>
+            <div class="w-50">
+                <h2 class="text-center">Schema</h2>
+                <div class="d-flex justify-content-center align-item-center">
+                    <div class="text-list">
+                        <p>Entrez une commande dans le terminal: </p>
+                        <ul>
+                            <li>init</li>
+                            <li>clone</li>
+                            <li>log</li>
+                            <li>branch</li>
+                            <li>checkout</li>
+                            <li>status</li>
+                            <li>add</li>
+                            <li>commit</li>
+                            <li>push</li>
+                            <li>rebase</li>
+                            <li>merge</li>
+                            <li>pull</li>
+                            <li>reset</li>
+                            <li>revert</li>
+                            <li>cherry-pick</li>
+                        </ul>
+                    </div>
+                    <img id="status-image" class="display-none" src="" alt="Status Image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
